@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7497A2BD1FAA9ABB00D5EFFC /* PGGCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2BC1FAA9ABB00D5EFFC /* PGGCarouselView.m */; };
+		7497A2C01FAA9ACA00D5EFFC /* PGGCarouselTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2BE1FAA9ACA00D5EFFC /* PGGCarouselTextView.m */; };
 		74B3D7DA1FA7F85100FAC105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D7D91FA7F85100FAC105 /* AppDelegate.m */; };
 		74B3D7DD1FA7F85100FAC105 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B3D7DC1FA7F85100FAC105 /* ViewController.m */; };
 		74B3D7E01FA7F85100FAC105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B3D7DE1FA7F85100FAC105 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7497A2BB1FAA9ABB00D5EFFC /* PGGCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGGCarouselView.h; sourceTree = "<group>"; };
+		7497A2BC1FAA9ABB00D5EFFC /* PGGCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGGCarouselView.m; sourceTree = "<group>"; };
+		7497A2BE1FAA9ACA00D5EFFC /* PGGCarouselTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGGCarouselTextView.m; sourceTree = "<group>"; };
+		7497A2BF1FAA9ACA00D5EFFC /* PGGCarouselTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGGCarouselTextView.h; sourceTree = "<group>"; };
 		74B3D7D51FA7F85100FAC105 /* PGGCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGGCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B3D7D81FA7F85100FAC105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74B3D7D91FA7F85100FAC105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		743512C11FA9BEE2008C1781 /* ImageCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				7497A2BB1FAA9ABB00D5EFFC /* PGGCarouselView.h */,
+				7497A2BC1FAA9ABB00D5EFFC /* PGGCarouselView.m */,
+			);
+			path = ImageCarousel;
+			sourceTree = "<group>";
+		};
+		743512C21FA9BF0A008C1781 /* textCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				7497A2BF1FAA9ACA00D5EFFC /* PGGCarouselTextView.h */,
+				7497A2BE1FAA9ACA00D5EFFC /* PGGCarouselTextView.m */,
+			);
+			path = textCarousel;
+			sourceTree = "<group>";
+		};
 		74B3D7CC1FA7F85100FAC105 = {
 			isa = PBXGroup;
 			children = (
@@ -105,11 +129,9 @@
 				74B3D7D91FA7F85100FAC105 /* AppDelegate.m */,
 				74B3D7DB1FA7F85100FAC105 /* ViewController.h */,
 				74B3D7DC1FA7F85100FAC105 /* ViewController.m */,
-				74B3D7DE1FA7F85100FAC105 /* Main.storyboard */,
-				74B3D7E11FA7F85100FAC105 /* Assets.xcassets */,
-				74B3D7E31FA7F85100FAC105 /* LaunchScreen.storyboard */,
-				74B3D7E61FA7F85100FAC105 /* Info.plist */,
-				74B3D7E71FA7F85100FAC105 /* main.m */,
+				743512C11FA9BEE2008C1781 /* ImageCarousel */,
+				743512C21FA9BF0A008C1781 /* textCarousel */,
+				74B3D80A1FA7FBDF00FAC105 /* source */,
 			);
 			path = PGGCarousel;
 			sourceTree = "<group>";
@@ -130,6 +152,18 @@
 				74B3D7FE1FA7F85100FAC105 /* Info.plist */,
 			);
 			path = PGGCarouselUITests;
+			sourceTree = "<group>";
+		};
+		74B3D80A1FA7FBDF00FAC105 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				74B3D7DE1FA7F85100FAC105 /* Main.storyboard */,
+				74B3D7E11FA7F85100FAC105 /* Assets.xcassets */,
+				74B3D7E31FA7F85100FAC105 /* LaunchScreen.storyboard */,
+				74B3D7E61FA7F85100FAC105 /* Info.plist */,
+				74B3D7E71FA7F85100FAC105 /* main.m */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +228,7 @@
 		74B3D7CD1FA7F85100FAC105 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PGG;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = penggege.CP;
 				TargetAttributes = {
@@ -265,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7497A2BD1FAA9ABB00D5EFFC /* PGGCarouselView.m in Sources */,
 				74B3D7DD1FA7F85100FAC105 /* ViewController.m in Sources */,
+				7497A2C01FAA9ACA00D5EFFC /* PGGCarouselTextView.m in Sources */,
 				74B3D7E81FA7F85100FAC105 /* main.m in Sources */,
 				74B3D7DA1FA7F85100FAC105 /* AppDelegate.m in Sources */,
 			);
@@ -432,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MRVYXC2HHB;
-				INFOPLIST_FILE = PGGCarousel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PGGCarousel/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.PGGCarousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MRVYXC2HHB;
-				INFOPLIST_FILE = PGGCarousel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PGGCarousel/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.PGGCarousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
